@@ -35,3 +35,20 @@
 3. It allows display of data in sorted order.
 4. It allows retrieval of data only in the forward order.
 - TreeSet is the concrete class for implementing SortedSet.
+
+#### Retrieving data from Collections:
+Cursor is an interface that is used to retrieve data from a Collection object one by one. There are three different types of cursor:
+
+1. Iterator Interface : It is used to traverse the elements in a collection framework in a sequential order. It has got 3 methods.
+- boolean HasNext()
+- elements next()
+- void remove()
+
+2. ListIterator Interface : It is an interface that contains methods to retrieve the elements from a collection object, both in forward and reverse directions. This iterator is for list based collections. It has got the following methods. 
+-  booleanhasNext(): This returns true if the ListIterator has more elements when traversing the list in the forward direction.
+-  booleanhasPrevious(): This returns true if the ListIterator has more elements when traversing the list in the reverse direction.
+-  element next(): This returns the next element in the list.
+-  element previous():This returns the previous element in the list.
+-  void remove(): This removes from the list the last elements that was returned by the next() or previous() methods.
+-  int nextIndex() Returns the index of the element that would be returned by a subsequent call to next(). (Returns list size if the list iterator is at the end of the list.)
+-  int previousIndex() 
